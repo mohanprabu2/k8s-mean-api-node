@@ -1,5 +1,8 @@
+const ip = process.env.MONGO_DB_IP || 'localhost';
+const port = process.env.MONGO_DB_PORT || '27017';
+
 module.exports = {
-		url : "mongodb://localhost:27017/"
+		url : "mongodb://"+ip+":"+port+"/"
 }
 
 /*
